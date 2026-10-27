@@ -1,0 +1,66 @@
+body {
+    background-color: #1F2937;
+    font-family: "Karla", sans-serif;
+}
+
+.title-el {
+    color: white;
+    margin-left: 350px;
+    margin-top: 200px;
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: -2px;
+}
+
+.title-el span {
+    color: #4ADF86;
+}
+
+.title-el h3 {
+    color: lightgray;
+    margin-top: -20px;
+}
+
+.check-el {
+    margin-left: 350px;
+    margin-top: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+button {
+    background-color: #10B981;
+    border: 0;
+    border-radius: 6px;
+    width: 191px;
+    height: 42px;
+    cursor: pointer;
+    color: white;
+}
+
+.check-el input {
+    margin-left: 30px;
+}
+
+.container {
+    border-top: solid 1px #2F3E53;
+    margin-top: 50px;
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+}
+
+.placeholder {
+    color: #55F991;
+    height: 39px;
+    width: 300px;
+    background-color: #273549;
+    margin-top: 50px;
+    border: solid 1px #273549;
+    border-radius: 6px;
+    text-align: center;
+    padding-top: 20px;
+}

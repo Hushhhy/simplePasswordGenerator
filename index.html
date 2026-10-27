@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>SimplePasswordGenerator</title>
+</head>
+<body>
+    <div class="title-el">
+        <h1>Generate a </br><span>random password</span></h1>
+        <h3>Never use an insecure password again.</h3>
+    </div>
+    <div class="check-el">
+        <button onclick="generatePassword()">Generate passwords</button>
+        <input type="checkbox" id="sAndN">
+        <label for="sAndN">Symbols and Numbers</label>
+        <input type="range" id="pwdLength" min="15" max="30" value="15" oninput="document.getElementById('length').innerText = this.value;">
+        <label for="pwdLength">Length: <span id="length"></span></label>
+    </div>
+    <div class="container">
+        <div class="placeholder" id="pwd1-el"></div>
+        <div class="placeholder" id="pwd2-el"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
