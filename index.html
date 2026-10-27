@@ -22,8 +22,8 @@
         <label for="pwdLength">Length: <span id="length"></span></label>
     </div>
     <div class="container">
-        <div class="placeholder" id="pwd1-el"></div>
-        <div class="placeholder" id="pwd2-el"></div>
+        <div class="placeholder" id="pwd1-el" onclick="navigator.clipboard.writeText(this.textContent)"></div>
+        <div class="placeholder" id="pwd2-el" onclick="navigator.clipboard.writeText(this.textContent)"></div>
     </div>
     <script src="script.js"></script>
 </body>

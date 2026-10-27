@@ -63,4 +63,9 @@ button {
     border-radius: 6px;
     text-align: center;
     padding-top: 20px;
+    cursor: pointer;
+}
+
+.placeholder:hover {
+    background-color: #2F3E53;
 }
