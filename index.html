@@ -7,24 +7,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>SimplePasswordGenerator</title>
+    <title>Password Generator</title>
 </head>
 <body>
-    <div class="title-el">
-        <h1>Generate a </br><span>random password</span></h1>
-        <h3>Never use an insecure password again.</h3>
-    </div>
-    <div class="check-el">
-        <button onclick="generatePassword()">Generate passwords</button>
-        <input type="checkbox" id="sAndN">
-        <label for="sAndN">Symbols and Numbers</label>
-        <input type="range" id="pwdLength" min="15" max="30" value="15" oninput="document.getElementById('length').innerText = this.value;">
-        <label for="pwdLength">Length: <span id="length"></span></label>
-    </div>
-    <div class="container">
-        <div class="placeholder" id="pwd1-el" onclick="navigator.clipboard.writeText(this.textContent)"></div>
-        <div class="placeholder" id="pwd2-el" onclick="navigator.clipboard.writeText(this.textContent)"></div>
-    </div>
+    <main class="card">
+        <div class="title-el">
+            <h1>Generate a<br><span>random password</span></h1>
+            <h3>Never use an insecure password again.</h3>
+        </div>
+        <div class="check-el">
+            <button onclick="generatePassword()">Generate passwords</button>
+            <div class="option">
+                <input type="checkbox" id="sAndN">
+                <label for="sAndN">Symbols and Numbers</label>
+            </div>
+            <div class="option">
+                <input type="range" id="pwdLength" min="15" max="30" value="15" oninput="document.getElementById('length').textContent = this.value">
+                <label for="pwdLength">Length: <span id="length">15</span></label>
+            </div>
+        </div>
+        <div class="container">
+            <div class="placeholder" id="pwd1-el" onclick="navigator.clipboard.writeText(this.textContent)"></div>
+            <div class="placeholder" id="pwd2-el" onclick="navigator.clipboard.writeText(this.textContent)"></div>
+        </div>
+    </main>
     <script src="script.js"></script>
 </body>
 </html>

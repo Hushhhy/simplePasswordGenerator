@@ -1,15 +1,24 @@
 body {
+    margin: 0;
+    min-height: 100vh;
     background-color: #1F2937;
     font-family: "Karla", sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.title-el {
-    color: white;
-    margin-left: 350px;
-    margin-top: 200px;
-    font-size: 25px;
-    font-weight: 900;
+.card {
+    width: 700px;
+}
+
+.title-el h1 {
+    font-size: 52px;
+    font-weight: 800;
     letter-spacing: -2px;
+    line-height: 1.1;
+    margin: 0 0 12px;
 }
 
 .title-el span {
@@ -17,55 +26,68 @@ body {
 }
 
 .title-el h3 {
-    color: lightgray;
-    margin-top: -20px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #D5D4D8;
+    margin: 0;
 }
 
 .check-el {
-    margin-left: 350px;
-    margin-top: 30px;
-    color: white;
+    margin-top: 40px;
     display: flex;
     align-items: center;
+    gap: 30px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 button {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 800;
     background-color: #10B981;
+    color: white;
     border: 0;
     border-radius: 6px;
     width: 191px;
     height: 42px;
     cursor: pointer;
-    color: white;
 }
 
-.check-el input {
-    margin-left: 30px;
+button:hover {
+    background-color: #0EA571;
 }
 
 .container {
-    border-top: solid 1px #2F3E53;
-    margin-top: 50px;
-    width: 80%;
-    margin-left: 10%;
+    border-top: 1px solid #2F3E53;
+    margin-top: 40px;
+    padding-top: 40px;
     display: flex;
-    justify-content: center;
-    gap: 300px;
+    gap: 30px;
 }
 
 .placeholder {
-    color: #55F991;
-    height: 39px;
-    width: 300px;
+    flex: 1;
+    height: 50px;
     background-color: #273549;
-    margin-top: 50px;
-    border: solid 1px #273549;
+    color: #55F991;
+    font-size: 18px;
     border-radius: 6px;
-    text-align: center;
-    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 
 .placeholder:hover {
     background-color: #2F3E53;
+}
+
+input {
+    accent-color: #10B981;
+    cursor: pointer;
 }
