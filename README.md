@@ -4,7 +4,7 @@ A small web app that generates two random passwords in one click, with an adjust
 
 Solo project from the [Scrimba Fullstack Developer Path](https://scrimba.com/fullstack-path-c0fullstack) (*JavaScript Fundamentals* module), built from a Figma design provided by Scrimba.
 
-**🌐 Live demo:** [your-link.netlify.app](https://your-link.netlify.app)
+**🌐 Live demo:** [Scrimba Password Generator](https://scrimpasswordgenerator.netlify.app)
 
 ![Screenshot of the Password Generator](./assets/screenshot.png)
 
